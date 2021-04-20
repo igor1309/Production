@@ -24,3 +24,19 @@ extension Intermediate: CustomStringConvertible {
         "\(name) \(measurement) \(contents)"
     }
 }
+
+#warning("for future use")
+#warning("need the same for Product (former SKU)")
+//public extension Intermediate {
+//    func totalIngredientsCost(
+//        pricesMass: PriceList<Ingredient<UnitMass>, UnitMass>,
+//        pricesVolume: PriceList<Ingredient<UnitVolume>, UnitVolume>,
+//        pricesPiece: PriceList<Ingredient<UnitPiece>, UnitPiece>
+//    ) -> Roubles {
+//        let byMass = ingredientsByMass * pricesMass
+//        let byVolume = ingredientsByVolume * pricesVolume
+//        let byPiece = ingredientsByPiece * pricesPiece
+//
+//        return byMass.total() + byVolume.total() + byPiece.total()
+//    }
+//}

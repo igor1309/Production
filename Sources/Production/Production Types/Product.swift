@@ -3,6 +3,7 @@ import Foundation
 /// `Product` - a final good, an item produced for the direct use by end consumers. Final goods are also referred to as consumer goods.
 /// Products are always measured (counted) in pieces.
 /// Generic type U: Unit is defined by intermediate used (product base) and is used for intermediateQty.
+/// Having generic Product means that we'll need separate price lists for Products with mass(UnitMass), volume (UnitVolume), pieces (UnitPiece) and other Unit (Dimension) types.
 public struct Product<U: Unit>: Hashable {
     public let name: String
 

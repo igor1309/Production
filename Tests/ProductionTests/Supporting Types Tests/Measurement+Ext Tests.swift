@@ -24,6 +24,10 @@ final class MeasurementExtTests: XCTestCase {
     }
 
     func testMeasurementUnitMassStatic() {
+        XCTAssertEqual(Measurement<UnitMass>.zero,
+                       Measurement<UnitMass>(value: 0, unit: .baseUnit()))
+        XCTAssertEqual(Measurement<UnitMass>.oneGram,
+                       Measurement<UnitMass>(value: 1, unit: .grams))
         XCTAssertEqual(Measurement<UnitMass>.oneKilogram,
                        Measurement<UnitMass>(value: 1, unit: .kilograms))
     }

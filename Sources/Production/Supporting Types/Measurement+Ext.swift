@@ -12,6 +12,8 @@ extension Measurement where UnitType == UnitPiece {
 }
 
 extension Measurement where UnitType == UnitMass {
+    public static let zero = Self(0, .baseUnit())
+    public static let oneGram = Self(1, .grams)
     public static let oneKilogram = Self(1, .kilograms)
 }
 

@@ -46,9 +46,9 @@ final class IntermediateTests: XCTestCase {
             measurement: .dozen,
             contents: contents
         )
+        
         XCTAssertEqual(intermediate2.description,
                        "sample 12.0 pc Contents [Flour: 120.0 g] [Milk: 5.0 cup] [Apple: 12.0 pc]")
-
     }
 
 }
