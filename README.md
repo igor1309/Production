@@ -1,3 +1,3 @@
 # Production
 
-A description of this package.
+Swift package contains basic types to describe production.
